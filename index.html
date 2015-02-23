@@ -26,12 +26,12 @@
   <li><a href="./writings/dixit2015naturalscene.pdf">Natural Scene Text Extraction</a>
 </ul>
 <script>
-$("a").each(function(){
-  $(this).on('click', function(){
-    ga('send', 'event', 'Link', 'Click', ${this}.innerHTML);
-    console.log($(this).innerHTML);
-  });
+$("a").click(function(){
+    ga('send', 'event', 'Link', 'Click', $(this).text());
+    console.log($(this).text());
 });
+</script>
+
 </body>
 </html>
 
