@@ -16,22 +16,15 @@
 <p> I love to code </p>
 <ul>
   <li><a href="https://github.com/akshaydixi">Github</a>
-  <li><a href="https://linkedin.com/in/akshaydixi">LinkedIn</a>
-  <li><a href="http://twitter.com/akshaydixi">@akshaydixi</a>
-  <li><a href="mailto:hello@akshaydixi.me">Email</a>
+  <li><a href="https://linkedin.com/in/akshaydixi" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'LinkedIn']);">LinkedIn</a>
+  <li><a href="http://twitter.com/akshaydixi" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Twitter']);">@akshaydixi</a>
+  <li><a href="mailto:hello@akshaydixi.me" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Email']);">Email</a>
 </ul>
 
 <p> Writings </p>
 <ul>
-  <li><a href="./writings/dixit2015naturalscene.pdf">Natural Scene Text Extraction</a>
+  <li><a href="./writings/dixit2015naturalscene.pdf" onClick="_gaq.push(['_trackEvent', 'Writings', 'Click', 'Dixit2005NaturalScene']);">Natural Scene Text Extraction</a>
 </ul>
-<script>
-$("a").each(function(){
-  ${this}.on('click', function(){
-    ga('send', 'event', 'Link', 'Click', ${this}.innerHTML);
-    console.log(${this}.innerHTML);
-  });
-});
 </body>
 </html>
 
