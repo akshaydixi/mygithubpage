@@ -27,9 +27,9 @@
 </ul>
 <script>
 $("a").each(function(){
-  ${this}.on('click', function(){
+  $(this).on('click', function(){
     ga('send', 'event', 'Link', 'Click', ${this}.innerHTML);
-    console.log(${this}.innerHTML);
+    console.log($(this).innerHTML);
   });
 });
 </body>
